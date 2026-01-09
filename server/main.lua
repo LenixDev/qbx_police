@@ -610,6 +610,7 @@ CreateThread(function()
 end)
 
 CreateThread(function()
+    if config.disableDutyBlips then return end
     while true do
         Wait(5000)
         updateBlips()
